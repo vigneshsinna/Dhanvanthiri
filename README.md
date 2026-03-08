@@ -1,4 +1,4 @@
-# Vainavi Goodies E-commerce Platform
+# Dhanvanthiri E-commerce Platform
 
 A modern, high-performance, full-stack scalable e-commerce platform designed to provide a seamless shopping experience for customers and robust management tools for administrators.
 
