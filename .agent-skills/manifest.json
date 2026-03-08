@@ -1,0 +1,93 @@
+﻿{
+    "generatedAt":  "2026-03-06T20:34:53.5003363+05:30",
+    "totalSkills":  84,
+    "sources":  [
+                    {
+                        "repo":  "anthropics-skills",
+                        "count":  18
+                    },
+                    {
+                        "repo":  "openai-skills",
+                        "count":  38
+                    },
+                    {
+                        "repo":  "skillkit",
+                        "count":  14
+                    },
+                    {
+                        "repo":  "superpowers",
+                        "count":  14
+                    }
+                ],
+    "duplicates":  [
+                       {
+                           "name":  "openai-docs",
+                           "count":  2
+                       },
+                       {
+                           "name":  "skill-creator",
+                           "count":  2
+                       },
+                       {
+                           "name":  "pdf",
+                           "count":  2
+                       }
+                   ],
+    "targets":  [
+                    {
+                        "name":  "claude",
+                        "path":  ".claude/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "codex",
+                        "path":  ".codex/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "opencode",
+                        "path":  ".opencode/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "gemini",
+                        "path":  ".gemini/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "aider",
+                        "path":  ".aider/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "cody",
+                        "path":  ".cody/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "amazonq",
+                        "path":  ".amazonq/skills",
+                        "format":  "skillmd"
+                    },
+                    {
+                        "name":  "copilot",
+                        "path":  ".github/skills",
+                        "format":  "markdown"
+                    },
+                    {
+                        "name":  "windsurf",
+                        "path":  ".windsurf/skills",
+                        "format":  "markdown"
+                    },
+                    {
+                        "name":  "devin",
+                        "path":  ".devin/skills",
+                        "format":  "markdown"
+                    },
+                    {
+                        "name":  "cursor",
+                        "path":  ".cursor/skills",
+                        "format":  "mdc"
+                    }
+                ]
+}

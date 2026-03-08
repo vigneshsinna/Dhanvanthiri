@@ -1,0 +1,55 @@
+export const queryKeys = {
+  auth: {
+    me: ['auth', 'me'] as const,
+  },
+  catalog: {
+    products: (params?: unknown) => ['catalog', 'products', params] as const,
+    product: (slug: string) => ['catalog', 'product', slug] as const,
+    categories: ['catalog', 'categories'] as const,
+    featured: ['catalog', 'featured'] as const,
+    reviews: (productId: number) => ['catalog', 'reviews', productId] as const,
+  },
+  cart: {
+    current: ['cart', 'current'] as const,
+    shippingRates: (addressId: number) => ['cart', 'shippingRates', addressId] as const,
+  },
+  checkout: {
+    summary: ['checkout', 'summary'] as const,
+    addresses: ['checkout', 'addresses'] as const,
+  },
+  orders: {
+    list: (params?: unknown) => ['orders', 'list', params] as const,
+    detail: (orderNumber: string) => ['orders', 'detail', orderNumber] as const,
+    tracking: (orderId: number) => ['orders', 'tracking', orderId] as const,
+  },
+  wishlist: {
+    list: ['wishlist'] as const,
+  },
+  cms: {
+    posts: (params?: unknown) => ['cms', 'posts', params] as const,
+    post: (slug: string) => ['cms', 'post', slug] as const,
+    page: (slug: string) => ['cms', 'page', slug] as const,
+    faqs: ['cms', 'faqs'] as const,
+    banners: (position?: string) => ['cms', 'banners', position] as const,
+    menus: (location: string) => ['cms', 'menus', location] as const,
+  },
+  admin: {
+    dashboard: (period: string) => ['admin', 'dashboard', period] as const,
+    analytics: (type: string, params?: unknown) => ['admin', 'analytics', type, params] as const,
+    products: (params?: unknown) => ['admin', 'products', params] as const,
+    orders: (params?: unknown) => ['admin', 'orders', params] as const,
+    customers: (params?: unknown) => ['admin', 'customers', params] as const,
+    inventory: (params?: unknown) => ['admin', 'inventory', params] as const,
+    categories: (params?: unknown) => ['admin', 'categories', params] as const,
+    reviews: (params?: unknown) => ['admin', 'reviews', params] as const,
+    pages: (params?: unknown) => ['admin', 'pages', params] as const,
+    posts: (params?: unknown) => ['admin', 'posts', params] as const,
+    banners: (params?: unknown) => ['admin', 'banners', params] as const,
+    faqs: (params?: unknown) => ['admin', 'faqs', params] as const,
+    media: (params?: unknown) => ['admin', 'media', params] as const,
+    settings: (group?: string) => ['admin', 'settings', group] as const,
+    modules: (params?: unknown) => ['admin', 'modules', params] as const,
+    module: (id: number) => ['admin', 'modules', id] as const,
+    moduleHealth: (id: number) => ['admin', 'modules', id, 'health'] as const,
+  },
+};
